@@ -1,0 +1,1017 @@
+2.1)
+celsius = eval(input("Enter a degree in Celsius: "))
+fahrenheit = (9 / 5) * celsius + 32
+print(celsius, "degree is", fahrenheit, "Fahrenheit")
+
+2.2)
+radius, length = eval(input("Enter the radius and length of a cylinder: "))
+area = radius * radius * 3.14159
+volume = area * length
+print("The area is", int(area * 100) / 100, "and the volume is", int(volume * 100) / 100)
+
+2.3)
+feet = eval(input("Enter a value for feet: "))
+print(feet, "feet is", feet * 0.305, "meters")
+
+2.4)
+pounds = eval(input("Enter a value in pounds: "))
+print(pounds, "pounds is", pounds * 0.454, "kilograms")
+
+2.5)
+subtotal, gratuity_rate = eval(input("Enter the subtotal and a gratuity rate: "))
+gratuity = subtotal * gratuity_rate / 100
+print("The gratuity is", gratuity, "and the total is", gratuity + subtotal)
+
+2.6)
+n = eval(input("Enter a number between 0 and 1000: "))
+print("The sum of the digit is", (n // 100) + ((n // 10) % 10) + (n % 10))
+
+2.7)
+min = eval(input("Enter the number of minutes: "))
+year = min / (365 * 24 * 60)
+remMin = min % (365 * 24 * 60)
+day = remMin / (24 * 60)
+print(min, "minutes is approximately", int(year), "years and", int(day), "days")
+
+2.8)
+M = eval(input("Enter the amount of water in kilograms: "))
+I = eval(input("Enter the initial temperature: "))
+F = eval(input("Enter the final temperature: "))
+Q = M * (F - I) * 4184
+print("The energy needed is", Q)
+
+2.9)
+t = eval(input("Enter the temperature in Fahrenheit between -58 and 41: "))
+v = eval(input("Enter the wind speed in miles per hour: "))
+T = 35.74 + (0.6215 * t) - (35.75 * (v ** 0.16)) + (0.4275 * t * (v ** 0.16))
+print("The wind chill index is", T)
+
+2.10)
+v, a = eval(input("Enter speed and acceleration: "))
+length = (v ** 2) / (2 * a)
+print("The minimum runway length for this plane is", length)
+
+2.11)
+finalAccountValue = eval(input("Enter final account value: "))
+annualInterestRate = eval(input("Enter annual interest rate in percent: "))
+monthlyInterestRate = annualInterestRate / 1200
+numberOfYears = eval(input("Enter number of years: "))
+numberOfMonths = numberOfYears * 12
+initialDepositAmount = finalAccountValue / ((1 + monthlyInterestRate) ** numberOfMonths)
+print("Initial deposit value is", initialDepositAmount)
+
+2.12)
+print("a  b  a ** b")
+print("1  2  1")
+print("2  3  8")
+print("3  4  81")
+print("4  5  1024")
+print("5  6  15625")
+
+2.13)
+n = eval(input("Enter a 4-digit number: "))
+print(n // 1000)
+print((n // 100) % 10)
+print((n // 10) % 10)
+print(n % 10)
+
+2.14)
+x1, y1, x2, y2, x3, y3 = eval(input("Enter three points of a triangle: "))
+side1 = ((x2 - x3) ** 2 + (y2 - y3) ** 2) ** 0.5
+side2 = ((x1 - x3) ** 2 + (y1 - y3) ** 2) ** 0.5
+side3 = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+s = (side1 + side2 + side3) / 2
+area = (s * (s - side1) * (s - side2) * (s - side3)) ** 0.5
+print("The area of the triangle is", area)
+
+2.15)
+s = eval(input("Enter the side: "))
+area = 3 * ((3) ** 0.5) * ((s) ** 2) / 2
+print("The area of the hexagon is", area)
+
+2.16)
+v0, v1, t = eval(input("Enter v0, v1 and t: "))
+a = (v1 - v0) / t
+print("The average acceleration is", a)
+
+2.17)
+weight = eval(input("Enter weight in pounds: "))
+height = eval(input("Enter weight in pounds: "))
+BMI = (weight * 0.45359237) / (height * 0.0254) ** 2
+print("BMI is", BMI)
+
+2.18) (not sure of the code)
+import time
+currentTime = time.timezone()
+totalSeconds = int(currentTime)
+currentSecond = totalSeconds % 60
+totalMinutes = totalSeconds // 60
+currentMinute = totalMinutes % 60
+totalHours = totalMinutes // 60
+currentHour = totalHours % 24
+print("The current time is", currentHour, ":", currentMinute, ":", currentSecond, "GMT")
+
+2.19)
+investmentAmount = eval(input("Enter investment amount: "))
+annualInterestRate = eval(input("Enter annual interest rate: "))
+monthlyInterestRate = annualInterestRate / 1200
+numberOfYears = eval(input("Enter the number of years: "))
+numberOfMonths = numberOfYears * 12
+futureInvestmentValue = investmentAmount * ((1 + monthlyInterestRate) ** numberOfMonths)
+print("Accumulated values is", futureInvestmentValue)
+
+2.20)
+balance, annualInterestRate = eval(input("Enter balance and interest rate: "))
+interest = balance * (annualInterestRate / 1200)
+print("The interest is", interest)
+
+2.21)
+mir = 5 / 1200
+msa = eval(input("Enter the monthly saving amount: "))
+month_1 = msa * (1 + mir)
+month_2 = (msa + month_1) * (1 + mir)
+month_3 = (msa + month_2) * (1 + mir)
+month_4 = (msa + month_3) * (1 + mir)
+month_5 = (msa + month_4) * (1 + mir)
+month_6 = (msa + month_5) * (1 + mir)
+print("After the sixth month, the account value will be", month_6)
+
+2.22)
+n = eval(input("Enter the number of years: "))
+newpop = 312032486 + (365 * 24 * 60 * 60 * n) * ((1 / 7) - (1 / 13) + (1 / 45))
+print("The population in", n, "years is", round(newpop))
+
+3.1)
+import math
+r = eval(input("Enter the length from center to vertex: "))
+s = 2 * r * math.sin(math.pi / 5)
+A = 3 * math.sqrt(3) * s * s / 2
+print("The area of the pentagon is", round(A * 100) / 100)
+
+3.2) (not sure of the code)
+import math
+radius = 6371.01
+x1, y1 = eval(input("Enter point 1 (latitude and longitude) in degrees: "))
+x2, y2 = eval(input("Enter point 2 (latitude and longitude) in degrees: "))
+d = radius * math.acos((math.sin(x1) * math.sin(x2)) + (math.cos(x1) * math.cos(x2) * math.cos(y1 - y2)))
+print("The distance between the two points is", d)
+
+3.4)
+import math
+s = eval(input("Enter the side: "))
+A = 5 * s * s / (4 * math.tan(math.pi / 5))
+print("The area of the pentagon is ", A)
+
+3.5)
+import math
+n = eval(input("Enter the number of sides: "))
+s = eval(input("Enter the side: "))
+Area = n * s * s / (4 * math.tan(math.pi / n))
+print("The area of the polygon is ", Area)
+
+3.6)
+a = eval(input("Enter the ASCII code: "))
+print("The character is", chr(a))
+
+3.7)
+import random
+import string
+print(random.choice(string.ascii_uppercase))
+
+3.8)
+amount = eval(input("Enter the amount: "))
+remainingAmount = int(amount * 100)
+numberOfOneDollars = remainingAmount // 100
+remainingAmount = remainingAmount % 100
+numberOfPennies = remainingAmount
+print("The amount", amount, "has ", numberOfOneDollars, "dollars and ", numberOfPennies, "cents")
+
+3.9)
+Name = input("Enter employee's name: ")
+numberOfHours = eval(input("Number of hours worked in a week: "))
+hourlyPayRate = eval(input("Enter hourly pay rate: "))
+federalTaxWithholdingRate = eval(input("Enter federal tax withholding rate: "))
+stateTaxWithholdingRate = eval(input("Enter sales tax withholding rate: "))
+
+print("Employee Name: ", Name)
+print("Hours Worked: ", numberOfHours)
+print("Pay Rate: ", '$', hourlyPayRate)
+print("Gross Pay: ", numberOfHours * hourlyPayRate)
+print("Deductions: ")
+print("Federal Withholding (20.0%): ", federalTaxWithholdingRate * numberOfHours * hourlyPayRate)
+print("State Withholding (9.0%): ", stateTaxWithholdingRate * numberOfHours * hourlyPayRate)
+print("Total Deduction: ", (federalTaxWithholdingRate * numberOfHours * hourlyPayRate) + \
+                 (stateTaxWithholdingRate * numberOfHours * hourlyPayRate))
+print("Net Pay: ", (federalTaxWithholdingRate * numberOfHours * hourlyPayRate) + \
+      (stateTaxWithholdingRate * numberOfHours * hourlyPayRate) + \
+      (federalTaxWithholdingRate * numberOfHours * hourlyPayRate) + \
+      (stateTaxWithholdingRate * numberOfHours * hourlyPayRate) + hourlyPayRate)
+
+3.10)
+import turtle
+turtle.write("\u03b1 \u03b2 \u03b3 \u03b4 \u03b5 \u03b6 \u03b7 \u03b8")
+turtle.done()
+
+3.11)
+n = eval(input("Enter a 4-digit number: "))
+a = str(n % 10)
+b = str((n // 10) % 10)
+c = str((n // 100) % 10)
+d = str(n // 1000)
+print("The reverse order is ",a + b + c + d)
+
+To predict birthday:
+
+day = 0
+question1 = "Is your birthday in set 1?\n" + \
+            " 1  3  5  7\n" + \
+            " 9 11 13 15\n" + \
+            "17 19 21 23\n" + \
+            "25 27 29 31" + \
+            "\nEnter 0 for No and 1 for Yes: "
+answer = eval(input(question1))
+if answer == 1:
+    day += 1
+
+question2 = "Is your birthday in set 2?\n" + \
+            " 2  3  6  7\n" + \
+            "10 11 14 15\n" + \
+            "18 19 22 23\n" + \
+            "26 27 30 31" + \
+            "\nEnter 0 for No and 1 for Yes: "
+answer = eval(input(question2))
+if answer == 1:
+    day += 2
+
+question3 = "Is your birthday in set 3?\n" + \
+            " 4  5  6  7\n" + \
+            "12 13 14 15\n" + \
+            "20 21 22 23\n" + \
+            "28 29 30 31" + \
+            "\nEnter 0 for No and 1 for Yes: "
+answer = eval(input(question3))
+if answer == 1:
+    day += 4
+
+question4 = "Is your birthday in set 4?\n" + \
+            " 8  9 10 11\n" + \
+            "12 13 14 15\n" + \
+            "24 25 26 27\n" + \
+            "28 29 30 31" + \
+            "\nEnter 0 for No and 1 for Yes: "
+answer = eval(input(question4))
+if answer == 1:
+    day += 8
+
+question5 = "Is your birthday in set 5?\n" + \
+            "16 17 18 19\n" + \
+            "20 21 22 23\n" + \
+            "24 25 26 27\n" + \
+            "28 29 30 31" + \
+            "\nEnter 0 for No and 1 for Yes: "
+answer = eval(input(question5))
+if answer == 1:
+    day += 16
+
+print("\nYour birthday is " + str(day) + "!")
+
+Finding the largest of 3 numbers:
+x, y, z = eval(input("Enter 3 numbers: "))
+print("x is the greatest & y is the 2nd greatest" if x > y and x > z else "y is the greatest" if y > x and y > z else "z is the greatest")
+
+4.1)
+import math
+a, b, c = eval(input("Enter the values of a, b, c: "))
+d = b * b - 4 * a * c
+if d < 0:
+    print ("The equation has no real roots")
+else:
+    r1 = (-b + math.sqrt(d)) / (2 * a)
+    r2 = (-b - math.sqrt(d)) / (2 * a)
+    if d == 0:
+        print("The root is", r1)
+    else:
+        print("The roots are ", format(r1, ".2f"), format(r2, ".2f"))
+
+4.2)
+import random
+number1 = random.randint(0, 9)
+number2 = random.randint(0, 9)
+number3 = random.randint(0, 9)
+answer = eval(input("What is " + str(number1) + " + " + str(number2) + " + " + str(number3) + "? "))
+print(number1, "+", number2, "+", number3, "=", answer, "is", number1 + number2 + number3 == answer)
+
+4.3)
+a, b, c, d, e, f = eval(input("Enter a, b, c, d, e, f: "))
+z = a* d - b * c
+if z == 0:
+    print("The equation has no solution")
+else:
+    x = (e * d - b * f) / z
+    y = (a * f - e * c) / z
+    print("x is", x, "and y is", y)
+
+4.4) example 4.1 in textbook
+
+4.5)
+day = eval(input("Enter today's day: "))
+daysElapsed = eval(input("Enter the no. of days elapsed since today: "))
+newday = (daysElapsed + day) % 7
+if newday == 1:
+    print("Monday")
+elif newday == 2:
+    print("Tuesday")
+elif newday == 3:
+    print("Wednesday")
+elif newday == 4:
+    print("Thursday")
+elif newday == 5:
+    print("Friday")
+elif newday == 6:
+    print("Saturday")
+else:
+    print("Sunday")
+
+4.6)
+wgt = eval(input("Enter the weight in pounds: "))
+ft = eval(input("Enter feet: "))
+inches = eval(input("Enter inches: "))
+height = (ft * 12 + inches) * 0.0254
+weight = wgt * 0.45359237
+bmi = weight / (height * height)
+print("BMI is", format(bmi, ".2f"))
+if bmi < 18.5:
+    print("Underweight")
+elif bmi < 25:
+    print("Normal")
+elif bmi < 30:
+    print("Overweight")
+else:
+    print("Obese")
+
+4.7)
+amount = eval(input("Enter an amount: "))
+remainingAmount = int(amount * 100)
+numberOfOneDollars = remainingAmount // 100
+remainingAmount = remainingAmount % 100
+numberOfQuarters = remainingAmount // 25
+remainingAmount = remainingAmount % 25
+numberOfDimes = remainingAmount // 10
+remainingAmount = remainingAmount % 10
+numberOfNickels = remainingAmount // 5
+remainingAmount = remainingAmount % 5
+numberOfPennies = remainingAmount
+print("Your amount", amount, "consists of \n",
+      "\t", numberOfOneDollars, "dollars\n" if numberOfOneDollars > 1 else "dollar\n",
+      "\t", numberOfQuarters, "quarters\n" if numberOfQuarters > 1 else "quarter\n",
+      "\t", numberOfDimes, "dimes\n" if numberOfDimes > 1 else "dime\n",
+      "\t", numberOfNickels, "nickels\n" if numberOfNickels > 1 else "nickel\n",
+      "\t", numberOfPennies, "pennies\n" if numberOfPennies > 1 else "penny")
+
+4.8)
+x, y, z = eval(input("Enter 3 numbers: "))
+if x > y and x > z:
+    if y > z:
+        print("The 3 numbers in increasing order are : ", z, y, x)
+    else:
+        print("The 3 numbers in increasing order are : ", y, z, y)
+if y > x and y > z:
+    if x > z:
+        print("The 3 numbers in increasing order are : ", z, x, y)
+    else:
+        print("The 3 numbers in increasing order are : ", x, z, y)
+if z > x and z > y:
+    if x > y:
+        print("The 3 numbers in increasing order are : ", y, x, z)
+    else:
+        print("The 3 numbers in increasing order are : ", x, y, z)
+
+4.9)
+w1, p1 = eval(input("Enter weight and price for package 1: "))
+w2, p2 = eval(input("Enter weight and price for package 2: "))
+ppp1 = p1 / w1
+ppp2 = p2 / w2
+print("Package 1 has the better price" if ppp1 > ppp2 else "Package 2 has the better price")
+
+4.10)
+import random
+number1 = random.randint(0, 99)
+number2 = random.randint(0, 99)
+answer = eval(input("What is " + str(number1) + " * " + str(number2) + "? "))
+if number1 * number2 == answer:
+    print("You're correct!")
+else:
+    print("You're answer is wrong.\n", number1, "*", number2, "is", number1 * number2)
+
+4.11)
+month = eval(input("Enter the number corresponding to a month, for ex. 1-January, 2-February and so on : "))
+year = eval(input("Enter the year : "))
+if month == 1:
+    print("January", year, "has 31 days.")
+elif month == 2:
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        print("February", year, "has 29 days.")
+    else:
+        print("February", year, "has 28 days.")
+elif month == 3:
+    print("March", year, "has 31 days.")
+elif month == 4:
+    print("April", year, "has 30 days.")
+elif month == 5:
+    print("May", year, "has 31 days.")
+elif month == 6:
+    print("June", year, "has 30 days.")
+elif month == 7:
+    print("July", year, "has 31 days.")
+elif month == 8:
+    print("August", year, "has 31 days.")
+elif month == 9:
+    print("September", year, "has 30 days.")
+elif month == 10:
+    print("October", year, "has 30 days.")
+elif month == 11:
+    print("November", year, "has 30 days.")
+else:
+    print("December", year, "has 31 days.")
+
+4.12)
+x = eval(input("Enter an integer: "))
+isDivisible = (x % 5 == 0 and x % 2 == 0 and x % 3 == 0)
+isDivisibleByEither = (x % 5 == 0) or (x % 2 == 0 and x % 3 == 0)
+isEitherButNotBoth = (x % 5 == 0) or (x % 2 == 0 and x % 3 == 0) and not (x % 5 == 0 and x % 2 == 0 and x % 3 == 0)
+print("Is", x, "divisible by 5 and 6?", isDivisible)
+print("Is", x, "divisible by 5 or 6?", isDivisibleByEither)
+print("Is", x, "divisible by 5 or 6, but not both?", isEitherButNotBoth)
+
+4.13) too big to compute
+
+4.14)
+import random
+coinFlip = random.randint(0,1)
+Head = 0
+Tail = 1
+guess = eval(input("Enter your guess: "))
+if guess == coinFlip:
+    print("You've guessed correctly!")
+else:
+    print("You've guessed incorrectly")
+
+4.15)
+import random
+lottery = random.randint(100, 999)
+guess = eval(input("Enter your 3-digit lottery pick: "))
+l1 = lottery // 100
+l2 = lottery // 10
+l3 = lottery % 10
+g1 = guess // 100
+g2 = guess // 10
+g3 = guess % 10
+print("The lottery number is", lottery)
+if guess == lottery:
+    print("You've hit the Jackpot of $10,000!")
+elif ((g1 == l1 or g1 == l2 or g1 == l3) and (g2 == l1 or g2 == l2 or g2 == l3) and (g3 == l1 or g3 == l2 or g3 == l3)):
+    print("You've won $3,000!")
+elif ((g1 == l1 or g1 == l2 or g1 == l3) or (g2 == l1 or g2 == l2 or g2 == l3) or (g3 == l1 or g3 == l2 or g3 == l3)):
+    print("You've won $1,000")
+else:
+    print("Sorry, you go home with a big 0")
+
+4.16)
+import random
+import string
+print("Random Upper Case Letter :", random.choice(string.ascii_uppercase))
+
+4.17)
+import random
+number = eval(input("scissor(0), rock(1), paper(2): "))
+guess = random.randint(0,2)
+if (guess == number):
+    if (guess == 0):
+        print("The computer is scissor. You are scissor too. It's a draw.")
+    if (guess == 1):
+        print("The computer is rock. You are rock too. It's a draw.")
+    if (guess == 2):
+        print("The computer is paper. You are paper too. It's a draw.")
+elif ((guess == 0) and (number == 1)):
+    print("The computer is scissor. You are rock. You win.")
+elif ((guess == 0) and (number == 2)):
+    print("The computer is scissor. You are paper. The computer wins.")
+elif ((guess == 1) and (number == 0)):
+    print("The computer is rock. You are scissor. The computer wins.")
+elif ((guess == 1) and (number == 2)):
+    print("The computer is rock. You are paper. You win.")
+elif ((guess == 2) and (number == 1)):
+    print("The computer is paper. You are rock. Yhe computer wins.")
+else:
+    print("The computer is paper. You are scissor. You win.")
+
+4.18)
+exchRate = eval(input("Enter the exchange rate from US dollars to RMB: "))
+convNum = eval(input("Enter 0 to convert dollars to RMB and 1 vice versa: "))
+if (convNum == 0):
+    dolla = eval(input("Enter the dollar amount: "))
+    yuanAmt = dolla * exchRate
+    print("$", dolla, "is", yuanAmt, "yuan")
+elif (convNum == 1):
+    rmb = eval(input("Enter the RMB amount: "))
+    doll = rmb / exchRate
+    print(rmb, "yuan is $", format(doll,".2f"))
+else:
+    print("Incorrect input")
+
+4.19)
+a, b, c = eval(input("Enter three edges: "))
+if (a + b > c) and (b + c > a) and (a + c > b):
+    print("The perimeter is ", a + b + c)
+else:
+    print("The input is invalid")
+
+4.20)
+t = eval(input("Enter the temperature in Fahrenheit between -58 and 41: "))
+v = eval(input("Enter the wind speed in miles per hour: "))
+if (t > -58 and t < 41) and (v >= 2):
+    T = 35.74 + (0.6215 * t) - (35.75 * (v ** 0.16)) + (0.4275 * t * (v ** 0.16))
+    print("The wind chill index is", T)
+elif (t > -58 and t < 41) and (v < 2):
+    print("The wind speed is invalid")
+elif (t < -58 or t > 41) or (v < 2):
+    print("The temperature is invalid")
+
+4.21)
+k = eval(input("Enter year: (e.g., 2008): "))
+m = eval(input("Enter month: 1-12: "))
+q = eval(input("Enter the day of the month: 1-31: "))
+j = (k / 100) // 1
+k = k % 100
+h = (q + (((26 * (m + 1)) / 10) // 1) + k + ((k / 4) // 1) + ((j / 4) // 1) + (5 * j)) % 7
+if (h == 0):
+    print("Day of the week is Saturday")
+elif (h == 1):
+    print("Day of the week is Sunday")
+elif (h == 2):
+    print("Day of the week is Monday")
+elif (h == 3):
+    print("Day of the week is Tuesday")
+elif (h == 4):
+    print("Day of the week is Wednesday")
+elif (h == 5):
+    print("Day of the week is Thursday")
+else:
+    print("Day of the week is Friday")
+
+4.22)
+x2, y2 = eval(input("Enter a point with two coordinates: "))
+x1 = 0
+y1 = 0
+r = 10
+d = (((x2 - x1) ** 2) + ((y2 - y1) ** 2)) ** 0.5
+if d > r:
+    print("Point", "(", x2, ",", y2, ") is not in the circle")
+else:
+    print("Point", "(", x2, ",", y2, ") is in the circle")
+
+4.23)
+x2, y2 = eval(input("Enter a point with two coordinates: "))
+w = 10
+h = 5
+x1 = 0
+y1 = 0
+vD = w / y2
+hD = h / x2
+if (x2 <= vD) and (y2 <= hD):
+    print("Point (", x2, y2, ") is in the rectangle")
+else:
+    print("Point (", x2, y2, ") is not in the rectangle")
+
+4.24) correction needed
+import random
+import string
+guessRank = random.randint(1,13)
+guessSuit = random.choice(string.ascii_lowercase)
+if guessRank <= 10:
+    print(guessRank)
+elif guessRank > 10:
+    if guessRank == 11:
+        print("Jack")
+    if guessRank == 12:
+        print("Queen")
+    if guessRank == 13:
+        print("King")
+if (guessSuit == a):
+    print("Clubs")
+if (guessSuit == b):
+    print("Diamonds")
+if (guessSuit == c):
+    print("Hearts")
+if (guessSuit == d):
+    print("Spades")
+print("The card you picked is the", guessRank, "of", guessSuit)
+
+4.25)
+x1, y1, x2, y2, x3, y3, x4, y4 = eval(input("Enter x1, y1, x2, y2, x3, y3, x4, y4: "))
+a = y1 - y2
+b = x2 - x1
+c = y3 - y4
+d = x4 - x3
+z = a * d - b * c
+e = (y1 - y2) * x1 - (x1 - x2) * y1
+f = (y3 - y4) * x3 - (x3 - x4) * y3
+if z == 0:
+    print("The two lines are parallel")
+else:
+    x = (e * d - b * f) / z
+    y = (a * f - e * c) / z
+    print("The intersecting point is at (", format(x,".2f"),",",format(y,".2f"),")")
+
+4.26)
+a = eval(input("Enter a three-digit integer: "))
+x = a // 100
+y = a % 100
+z = y % 10
+if x == z:
+    print(a, "is a palindrome")
+else:
+    print(a, "is not a palindrome")
+
+4.27)
+x1, y1 = eval(input("Enter a point with two coordinates: "))
+if (x1 / 2) > y1:
+    print("The point is in the triangle")
+else:
+    print("The point is not in the triangle")
+
+4.28)
+x1, y1, w1, h1 = eval(input("Enter r1's center x-, y-coordinates, width, and height: "))
+x2, y2, w2, h2 = eval(input("Enter r2's center x-, y-coordinates, width, and height: "))
+if (x1 + x2 > h2) and (x1 < h2 and x2 < h2):
+    print("r2 is inside r1")
+elif (x1 + x2 < h2) and (x2 < x1 + h2):
+    print("r2 overlaps r1")
+else:
+    print("r2 does not overlap r1")
+
+
+4.29)
+x1, y1, r1 = eval(input("Enter circle 1's center x-, y-coordinates, and radius: "))
+x2, y2, r2 = eval(input("Enter circle 2's center x-, y-coordinates, and radius: "))
+d = (((x2 - x1) ** 2) + ((y2 - y1) ** 2)) ** 0.5
+if d <= abs(r1 - r2):
+    print("circle 2 is inside circle 1")
+elif d <= r1 + r2:
+    print("circle 2 overlaps circle 1")
+else:
+    print("circle 2 does not overlap circle 1")
+
+4.30)don't know the answer
+
+4.31)
+x0, y0, x1, y1, x2, y2 = eval(input("Enter coordinates for the three points p0, p1, and p2: "))
+d = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0)
+if d > 0:
+    print("p2 is on the left side of the line from p0 to p1")
+elif d == 0:
+    print("p2 is on the same line from p0 to p1")
+else:
+    print("p2 is on the right side of the line from p0 to p1")
+
+4.32)skip
+
+4.33)
+x = eval(input("Enter a decimal value (0 to 15): "))
+if (x < 10):
+    print("The hex value is", x)
+elif (x == 10):
+    print("The hex value is A")
+elif (x == 11):
+    print("The hex value is B")
+elif (x == 12):
+    print("The hex value is C")
+elif (x == 13):
+    print("The hex value is D")
+elif (x == 14):
+    print("The hex value is E")
+elif (x == 15):
+    print("The hex value is F")
+else:
+    print("Invalid input")
+
+4.34)correction needed
+x = eval(input("Enter a hex character: "))
+if x < 10:
+    print("The hex value is", x)
+elif x == 'A':
+    print("The hex value is 10")
+elif x == 'B':
+    print("The hex value is 11")
+elif x == 'C':
+    print("The hex value is 12")
+elif x == 'D':
+    print("The hex value is 13")
+elif x == 'E':
+    print("The hex value is 14")
+elif x == 'F':
+    print("The hex value is 15")
+else:
+    print("Invalid input")
+
+
+5.1)
+count = 0
+num_total = 0
+pos_count = 0
+neg_count = 0
+number = eval(input("Enter an integer, the input ends if it is 0: "))
+if number == 0:
+    print("You didn't enter any number")
+else:
+    while number != 0:
+        if number > 0:
+            pos_count += 1
+        elif number < 0:
+            neg_count += 1
+        num_total += number
+        number = eval(input("Enter an integer, the input ends if it is 0: "))
+        count += 1
+    avg = num_total / count
+    print("The number of positives is", pos_count)
+    print("The number of negatives is", neg_count)
+    print("The total is", num_total)
+    print("The average is", format(avg, ".2f"))
+
+5.2)
+import random
+import time
+correctCount = 0
+count = 0
+NUMBER_OF_QUESTIONS = 10
+startTime = time.time()
+while count < NUMBER_OF_QUESTIONS:
+    number1 = random.randint(1, 15)
+    number2 = random.randint(1, 15)
+    answer = eval(input("What is " + str(number1) + " + " + str(number2) + " ? "))
+    if number1 + number2 == answer:
+        print("You're correct!")
+        correctCount += 1
+    else:
+        print("You're answer is wrong. \n", number1, "+", number2, "is", number1 + number2)
+    count += 1
+endTime = time.time()
+testTime = int(endTime - startTime)
+print("Correct count is", correctCount, "out of", NUMBER_OF_QUESTIONS, "\nTest time is", testTime, "seconds")
+
+5.3)
+print("Kilograms", "\t\t", "Pounds \n")
+for i in range(1, 100):
+    j = i * 2.2
+    print(i, "\t\t\t\t", format(j, ".1f"))
+for i in range(101, 200):
+    j = i * 2.2
+    print(i, "\t\t\t", format(j, ".1f"))
+
+5.4)
+print("Miles", "\t\t\t", "Kilograms \n")
+for i in range(1, 11):
+    j = i * 1.609
+    print(i, "\t\t\t\t", format(j, ".3f"))
+
+5.5)
+print("Kilograms", "\t\t", "Pounds", "\t\t", "|", "\t\t", "Pounds", "\t\t", "Kilograms")
+for i,x in zip(range(1, 101, 2), range(20, 270, 5)):
+    j = i * 2.2
+    y = x * 0.45
+    print(i, "\t\t\t\t", format(j, ".1f"), "\t\t\t", "|", "\t\t", x, "\t\t\t", format(y, ".2f"))
+for i,x in zip(range(101, 201, 2), range(270, 520, 5)):
+    j = i * 2.2
+    y = x * 0.45
+    print(i, "\t\t\t", format(j, ".1f"), "\t\t\t", "|", "\t\t", x, "\t\t\t", format(y, ".2f"))
+
+5.6)
+print("Kilograms", "\t\t", "Pounds", "\t\t", "|", "\t\t", "Pounds", "\t\t", "Kilograms")
+for i,x in zip(range(1, 7), range(20, 50, 5)):
+    j = i * 1.609
+    y = x * 0.621
+    print(i, "\t\t\t\t", format(j, ".3f"), "\t\t\t", "|", "\t\t", x, "\t\t\t", format(y, ".3f"))
+for i,x in zip(range(7, 11), range(50, 70, 5)):
+    j = i * 1.609
+    y = x * 0.621
+    print(i, "\t\t\t\t", format(j, ".3f"), "\t\t", "|", "\t\t", x, "\t\t\t", format(y, ".3f"))
+
+5.7)
+import math
+print("Degree", "\t\t", "Sin", "\t\t\t", "Cos")
+for i in range(0, 100, 10):
+    j = math.sin(math.radians(i))
+    k = math.cos(math.radians(i))
+    print(i, "\t\t\t", format(j, ".4f"), "\t\t", format(k, ".4f"))
+for i in range(100, 370, 10):
+    j = math.sin(math.radians(i))
+    k = math.cos(math.radians(i))
+    print(i, "\t\t", format(j, ".4f"), "\t\t", format(k, ".4f"))
+
+5.8)
+import math
+print("Number", "\t\t", "Square Root")
+for i in range(0, 22, 2):
+    j = math.sqrt(i)
+    print(i, "\t\t\t", format(j, ".4f"))
+
+5.9)
+i = 1
+j = i * 10000
+k = 0
+for i in range(1, 15):
+    j += 0.05 * j
+    if i == 10:
+        print("The cost of tuition in 10 years is $", format(j, ".3f"))
+    if i > 10:
+        k += j
+print("The total cost of 4 years tuition in 10 years is $", format(k, ".3f"))
+
+
+5.10)
+numOfStudents = eval(input("Enter the number of students : "))
+highestScore = 0
+for i in range(numOfStudents):
+    score = eval(input("Enter the student " + str(i + 1) + "'s score : "))
+    if score > highestScore:
+        highestScore = score
+print("The highest score is ", highestScore)
+
+
+5.11)
+numOfStudents = eval(input("Enter the number of students : "))
+highestScore = 0
+secondScore = 0
+for i in range(numOfStudents):
+    score = eval(input("Enter the student " + str(i + 1) + "'s score : "))
+    if score > secondScore:
+        if score > highestScore:
+            highestScore = score
+        else:
+            secondScore = score
+print("The highest score is ", highestScore)
+print("The 2nd highest score is ", secondScore)
+
+
+5.12)
+count = 1
+no_of_divisibles_per_line = 10
+number = 100
+print("The numbers from 100 to 1000 which are both divisible by 5 & 6 are")
+for number in range(100, 1000):
+    if number % 5 == 0 and number % 6 == 0:
+        if count % 10 != 0:
+            print(number, end=' ')
+        else:
+            print(number)
+        count += 1
+
+
+5.13)
+count = 1
+no_of_divisibles_per_line = 10
+number = 100
+print("The numbers from 100 to 200 which are divisible by 5 or 6 but not both are")
+for number in range(100, 200):
+    if number % 5 == 0 or number % 6 == 0 and not number % 5 == 0 and number % 6 == 0:
+        if count % 10 != 0:
+            print(number, end=' ')
+        else:
+            print(number)
+        count += 1
+
+
+5.14)
+n = 0
+print("The smallest n such that n2 > 12,000 is ")
+while n * n < 12000:
+    n += 1
+print(n)
+
+
+5.15)
+n = 1000000
+print("The largest n such that n3 < 12,000 is ")
+while n * n * n > 12000:
+    n -= 1
+print(n)
+
+
+5.16)
+n1 = eval(input("Enter the value of the 1st number : "))
+n2 = eval(input("Enter the value of the 2nd number : "))
+d = min(n1, n2)
+while d <= n1 or d <= n2:
+    if n1 % d == 0 and n2 % d == 0:
+        break
+    d -= 1
+print(d, "is the greatest common divisor for n1 and n2")
+
+5.17)
+print("The characters that are displayed from '!' to '~' are \n")
+count = 1
+for i in range(33, 127):
+    j = chr(i)
+    if count % 10 != 0:
+        print(j, end=' ')
+    else:
+        print(j)
+    count += 1
+
+#Program to display between any 2 ASCII characters (both inclusive)
+
+a = input("Enter the first character: ")
+b = input("Enter the second character: ")
+i = ord(a)
+j = ord(b)
+print("The characters that are displayed from", a, "to", b, "are \n")
+count = 1
+for x in range(i, j + 1):
+    if count % 10 != 0:
+        print(chr(x), end=' ')
+    else:
+        print(chr(x))
+    count += 1
+
+5.18)
+number = eval(input("Enter any integer greater than 1 : "))
+f = 2
+while f <= number:
+    if number % f == 0:
+        print(f, end="")
+        number /= f
+        if number != 1:
+            print(",", end=" ")
+    else:
+        f += 1
+
+5.19)
+n = eval(input("Enter the number of lines : "))
+for i in range(1, n + 1):
+    for space in range(1, (n + 1) - i):
+        print(" ", end="  ")
+    for left in range(i, 1, -1):
+        print(format(left, "2d"), end=" ")
+    for right in range(1, i + 1):
+        print(format(right, "2d"), end=" ")
+    print()
+
+5.20)
+NUMBER_OF_LINE = 6
+print("Pattern A")
+for i in range(1, NUMBER_OF_LINE + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+print("\nPattern B")
+for i in range(NUMBER_OF_LINE + 1, 1, -1):
+    for j in range(1, i):
+        print(j, end=" ")
+    print()
+print("\nPattern C")
+for i in range(1, NUMBER_OF_LINE + 1):
+    for space in range(0, NUMBER_OF_LINE - i):
+        print(" ", end=" ")
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()
+print("\nPattern D")
+for i in range(NUMBER_OF_LINE + 1, 1, -1):
+    for j in range(1, i):
+        print(j, end=" ")
+    print()
+
+5.21)
+n = eval(input("Enter the number of lines : "))
+for i in range(1, n + 1):
+    for space in range(n + 1 - i, 1, -1):
+        print(" ", end="  ")
+    for left in range(0, i - 1):
+        print(format(2 ** left, "3d"), end="")
+    for right in range(i - 1, -1, -1):
+        print(format(2 ** right, "3d"), end=" ")
+    print()
+
+5.22)
+count = 1
+for num in range(2, 1001):
+    if all(num % i != 0 for i in range(2, num)):
+        if count % 8 != 0:
+            print(format(num, "4d"), end='  ')
+        else:
+            print(num)
+        count += 1
+
+5.23)correction needed
+loanAmount = eval(input("Enter the loan amount : "))
+numberOfYears = eval(input("Enter the number of years : "))
+annualInterestRate = 5
+i = 5
+print("Interest Rate", "\t\t", "Monthly Payment", "\t\t", "Total Payment \n")
+while i <= 8:
+    monthlyInterestRate = annualInterestRate / 1200
+    monthlyPayment = loanAmount * monthlyInterestRate / (1 - 1 / (1 + monthlyInterestRate) ** (numberOfYears * 12))
+    totalPayment = monthlyPayment * numberOfYears * 12
+    print(i, "\t\t", format(monthlyPayment, ".2f"), "\t\t", format(totalPayment, ".2f"))
+    i += .125
+
